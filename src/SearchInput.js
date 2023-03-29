@@ -14,9 +14,12 @@ export default class SearchInput extends PureComponent {
 
   render() {
     return (
+
+      //BURADA İNPUTUMUZA HİÇ BİR ŞEKİLDE ERİŞEMEDİĞİM İÇİN PLACEHOLDER EKLEDİM
       <div className="component-search-input">
         <div>
-          <input onChange={this.handleChange} />
+        <label htmlFor="search-input">Search</label>
+          <input id="search-input" placeholder="Search emoji..." onChange={this.handleChange} />
         </div>
       </div>
     );
